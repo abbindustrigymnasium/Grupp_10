@@ -1,12 +1,12 @@
-## Grupp_10 lamp projekt
+# Grupp_10 lamp projekt
 I det här projektet har vi gjort en lampa som kan lysa med både varmt och kallt ljus. Vi styr det indirekta varma ljuset med en app som vi har skapat med react native. Det kalla direkta ljuset styr vi med en avståndssensor som styrs via en arduino microprosessor. 
 
-# Backend
+## Backend
 * light2.js - kopplar ihop databasen med arduino-koden
 
 För att starta backenden måste man ladda ner hela Backend mappen. Sedan måste man öppna filerna via VSC eller liknande program. 
 
-# Fontend 
+## Fontend 
 * Component1.js - Rubriken
 * Component3.js - Slidern
 * Comp1.js - Kopplar ihop frontenden med backenden
