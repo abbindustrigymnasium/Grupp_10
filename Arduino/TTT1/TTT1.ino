@@ -38,7 +38,8 @@ void setup() {
 String GetfromDB(String host){
 String url= "/grupp10_light/"+Lampname; //Urlen jag använder för att posta mina värden
   // Detta skickar värdena till servern.
-   String Output ="GET "+ url + " HTTP/1.1\r\n" + //Säger att det är typen post, kan vara patch, get,delete beroende på vad man vill göra., samt urlen vi ska till.
+   String Output ="GET "+ url + " HTTP/1.1\r\n" + 
+         //Säger att det är typen post, kan vara patch, get,delete beroende på vad man vill göra., samt urlen vi ska till.
                  "Host: " + host+ "\r\n" + //Berättar vilken host det är vi ansluter till
                  "\r\nConnection: close\r\n\r\n"; //skickar vår buffer som  body
  return Output;
@@ -65,9 +66,11 @@ String SendtoDB(String host){
 //här någonstans ska jag anvädna POST eller PATCH beroende på om värdet finns!!!!
   // Detta skickar värdena till servern.
 
-   String Output =type+url + " HTTP/1.1\r\n" + //Säger att det är typen post, kan vara patch, get,delete beroende på vad man vill göra., samt urlen vi ska till.
+   String Output =type+url + " HTTP/1.1\r\n" + 
+         //Säger att det är typen post, kan vara patch, get,delete beroende på vad man vill göra., samt urlen vi ska till.
                  "Host: " + host+ "\r\n" + //Berättar vilken host det är vi ansluter till
-                 "Content-Type: application/json\r\n" + //Säger att det är Json format vi skickar (dock konverterat till en string för att kunna skickas.
+                 "Content-Type: application/json\r\n" +
+         //Säger att det är Json format vi skickar (dock konverterat till en string för att kunna skickas.
                  "Content-Length: " + buffer.length() + "\r\n" + //Berättar hur stort packet vi ska skicka.
                  "\r\n" + // Detta är en extra radbrytning för att berätta att det är här bodyn startar.
                  buffer + "\n"; //skickar vår buffer som  body
@@ -79,7 +82,8 @@ String SendtoDB(String host){
 
 void ConnecttoDB(String input){
    const int httpPort = 3001; //porten vi ska till
-  const char* host = "iot.abbindustrigymnasium.se";//Adressen vi ska ansluta till. 7Laddaremygglustbil "http://iot.abbindustrigymnasium.se"   
+  const char* host = "iot.abbindustrigymnasium.se";
+      //Adressen vi ska ansluta till. 7Laddaremygglustbil "http://iot.abbindustrigymnasium.se"   
      Serial.print("connecting to ");
  Serial.println(host); //Skriver ut i terminalen för att veta vart vi ska skicka värdena.
   // Use WiFiClient class to create TCP connections
