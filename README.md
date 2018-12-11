@@ -8,9 +8,9 @@ Det kalla direkta ljuset styr vi med en avståndssensor som styrs via en micropr
 För att starta backenden måste man ladda ner hela Backend mappen. Sedan måste man öppna filerna via **VSC** eller liknande program. Därefter måste man installera **node modules** genom att skriva **npm install** i terminalen. Sist måste man skriva in **npm start** i terminalen för att starta backenden.
 
 ## Frontend 
-* Component1.js - Rubriken
-* Component3.js - Slidern
-* Comp1.js - Kopplar ihop frontenden med backenden
+* Rubrik.js - Rubriken
+* Slider.js - Slidern
+* Connect.js - Kopplar ihop frontenden med backenden
 * Screen5.js - Visar alla komponenter
 
 För att starta frontenden måste man först ladda ner hela Frontend mappen. Sedan måste man öppna filerna via **VSC** eller liknande program. Därefter måste man installera **node modules** genom att skriva **npm install** i terminalen. Samma sak måste man även göra med **expo** genom att skriva **npm install expo**. Sist måste man skriva in **npm start** i terminalen och genom att skanna QR-koden från terminalen får man upp appen i **expo-appen**. 
@@ -23,6 +23,6 @@ P.s. Glöm inte att ha mobilen och datorn på samma nätverk.
 För att kunna använda koden måste man ladda ner hela Ardiuno mappen. Den innehåller två mappar som innehåller båda koderna. Koderna ligger i mappar på grund av att för att starta koden i Arduino måste filerna ligga i mappar. Därefter laddar man upp koden till microprocessorn.
 P.s. Innan man laddar ner koden måste man ladda ner vissa bibliotek som  man kan hitta i koden.  
 
-tips
+
 
 
