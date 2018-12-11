@@ -1,6 +1,6 @@
 # Grupp_10 lamp projekt
 I det här projektet har vi gjort en lampa som kan lysa med både varmt och kallt ljus. Vi styr det indirekta varma ljuset med en app som vi har skapat med **node** och **react native**. Med **node** har vi gjort backenden och backenden är basen för hela lampan. Med hjälp av **react native** har vi skapat appen(utseende/funktioner så som tex slidern). Språket **Javascript** är det språk som vi använder till både backend och frontend. 
-Det kalla direkta ljuset styr vi med en avståndssensor som styrs via en microprosessor som vi styr via **arduino-kod**. **Arduino-koden** är skriven med språket **c++**. 
+Det kalla direkta ljuset styr vi med en avståndssensor som styrs via en microprocessor som vi styr via **arduino-kod**. **Arduino-koden** är skriven med språket **c++**. 
 
 ## Backend
 * light2.js - kopplar ihop databasen med frontenden
@@ -20,7 +20,8 @@ P.s. Glöm inte att ha mobilen och datorn på samma nätverk.
 * LS.ino - Koden som styr sensorn
 * TTT1.ino - Koden som hämtar och skickar värden från/till databasen och ändrar ljusstyrkan 
 
-För att kunna använda koden måste man ladda ner hela Ardiuno ma
+För att kunna använda koden måste man ladda ner hela Ardiuno mappen. Den innehåller två mappar som innehåller båda koderna. Koderna ligger i mappar på grund av att för att starta koden i Arduino måste filerna ligga i mappar. Därefter laddar man upp koden till microprocessorn.
+P.s. Innan man laddar ner koden måste man ladda ner vissa bibliotek som  man kan hitta i koden.  
 
 tips
 
