@@ -3,7 +3,7 @@ import Slider from "react-native-slider"; // importerar slidern från react nati
 import { AppRegistry, StyleSheet, View, Text } from "react-native"; // importerar komponeneter för att kunna styla text osv
 import { LinearGradient, Constants }from 'expo'; // linear gradient gör så att mna kan få "fade" effekten på färgerna
 
-export default class Component3 extends React.Component {
+export default class Slider extends React.Component {
     constructor(props) {
         super(props);
 

@@ -6,9 +6,9 @@ import {
 
 
 
-import Component1 from './Component1'; // importerar component 1 och 3 till screen 5
-import Component3 from './Component3';
-import showproducts from './Comp1';
+import Rubrik from './Rubrik'; // importerar Slider.js och Rubrik.js till screen 5
+import Slider from './Slider';
+import showproducts from './Connect';
 
 export default class Screen5 extends React.Component {
 
@@ -17,8 +17,7 @@ export default class Screen5 extends React.Component {
         super(props);
 
         this.state = {
-            Component1Visible: true,
-            Component2Visible: true,
+            RubrikVisible: true,
         }
 
     }
@@ -85,15 +84,15 @@ export default class Screen5 extends React.Component {
 
                     <View style={styles.screencontainerInner}>
 
-                        <Component1 
+                        <Rubrik 
                             navigation={this.props.navigation}
                             toggleComponent={ (component) => this.toggleComponent(component) }
                             hideComponent={ (component) => this.hideComponent(component) }
                             showComponent={ (component) => this.showComponent(component) }
-                            visible={ this.state.Component1Visible }
+                            visible={ this.state.RubrikVisible }
                         />
                         
-                        <Component3/>
+                        <Slider/>
 
                        
                     </View>

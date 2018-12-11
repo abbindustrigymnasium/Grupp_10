@@ -8,7 +8,7 @@ import {
 
 import { FontAwesome } from '@expo/vector-icons';
 
-export default class Component1 extends React.Component {
+export default class Rubrik extends React.Component {
 
 
     render() {
