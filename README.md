@@ -3,7 +3,7 @@ I det här projektet har vi gjort en lampa som kan lysa med både varmt och kall
 Det kalla direkta ljuset styr vi med en avståndssensor som styrs via en microprocessor som vi styr via **arduino-kod**. **Arduino-koden** är skriven med språket **c++**. 
 
 ## Backend
-* light2.js - kopplar ihop databasen med frontenden
+* light2.js - kopplar ihop databasen, arduinon och frontenden
 
 För att starta backenden måste man ladda ner hela Backend mappen. Sedan måste man öppna filerna via **VSC** eller liknande program. Därefter måste man installera **node modules** genom att skriva **npm install** i terminalen. Sist måste man skriva in **npm start** i terminalen för att starta backenden.
 
@@ -17,7 +17,7 @@ För att starta frontenden måste man först ladda ner hela Frontend mappen. Sed
 P.s. Glöm inte att ha mobilen och datorn på samma nätverk. 
 
 ## Arduino 
-* LS.ino - Koden som styr sensorn
+* LS.ino - Koden för avståndssensorn
 * TTT1.ino - Koden som hämtar och skickar värden från/till databasen och ändrar ljusstyrkan 
 
 För att kunna använda koden måste man ladda ner hela Ardiuno mappen. Den innehåller två mappar som innehåller båda koderna. Koderna ligger i mappar på grund av att för att starta koden i Arduino måste filerna ligga i mappar. Därefter laddar man upp koden till microprocessorn.
