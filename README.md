@@ -1,10 +1,11 @@
 # Grupp_10 lamp projekt
-I det här projektet har vi gjort en lampa som kan lysa med både varmt och kallt ljus. Vi styr det indirekta varma ljuset med en app som vi har skapat med react native. Det kalla direkta ljuset styr vi med en avståndssensor som styrs via en arduino microprosessor. 
+I det här projektet har vi gjort en lampa som kan lysa med både varmt och kallt ljus. Vi styr det indirekta varma ljuset med en app som vi har skapat med **node** och **react native**. Med **node** har vi gjort backenden och backenden är basen för hela lampan. Med hjälp av **react native** har vi skapat appen(utseende/funktioner så som tex slidern). Språket **Javascript** är det språk som vi använder till både backend och frontend. 
+Det kalla direkta ljuset styr vi med en avståndssensor som styrs via en microprosessor som vi styr via **arduino-kod**. **Arduino-koden** är skriven med språket **c++**. 
 
 ## Backend
-* light2.js - kopplar ihop databasen med arduino-koden
+* light2.js - kopplar ihop databasen med frontenden.
 
-För att starta backenden måste man ladda ner hela Backend mappen. Sedan måste man öppna filerna via VSC eller liknande program. 
+För att starta backenden måste man ladda ner hela Backend mappen. Sedan måste man öppna filerna via **VSC** eller liknande program. Därefter måste man installera **node modules** genom att skriva **npm install** i terminalen. Sist måste man skriva in **npm start** i terminalen för att starta backenden.
 
 ## Fontend 
 * Component1.js - Rubriken
@@ -12,6 +13,6 @@ För att starta backenden måste man ladda ner hela Backend mappen. Sedan måste
 * Comp1.js - Kopplar ihop frontenden med backenden
 * Screen5.js - Visar alla komponenter
 
-För att starta frontenden måste man först ladda ner hela Frontend mappen. Sedan måste man öppna filerna via VSC eller liknande program. Därefter måste man installera node modules genom att skriva npm install i terminalen. Samma sak måste man även göra med expo genom att skriva npm install expo. Sist måste man skriva in npm start i terminalen och genom att skanna QR-koden från terminalen får man upp appen i expo-appen. 
+För att starta frontenden måste man först ladda ner hela Frontend mappen. Sedan måste man öppna filerna via **VSC** eller liknande program. Därefter måste man installera **node modules** genom att skriva **npm install** i terminalen. Samma sak måste man även göra med **expo** genom att skriva **npm install expo**. Sist måste man skriva in **npm start** i terminalen och genom att skanna QR-koden från terminalen får man upp appen i **expo-appen**. 
 P.s. Glöm inte att ha mobilen och datorn på samma nätverk. 
 
