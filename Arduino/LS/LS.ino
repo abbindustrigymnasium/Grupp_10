@@ -55,8 +55,8 @@ void loop(){                             // satartar loopet
         Serial.println(newvalue[i]);                      
         delay(100);
         }
-        int tot = newvalue[0] + newvalue[1] + newvalue[2] + newvalue[3] + newvalue[4] + newvalue[5] + newvalue[6] + newvalue[7] + newvalue[8] + newvalue[9];  
-         // det lägger in värdena i arrayen
+        int tot = newvalue[0] + newvalue[1] + newvalue[2] + newvalue[3] + newvalue[4] + newvalue[5] + newvalue[6]
+          + newvalue[7] + newvalue[8] + newvalue[9];   // det lägger in värdena i arrayen
         if( tot/10 < SensorValue + 30 and tot/10 > SensorValue -30) { // vi kollar att värdena som sensorn får är ungefar lika 
           Serial.println("changing state");
           SensorValue = OnOff(SensorValue);              // om värden är mindre än 200 då lampan ska släckas
