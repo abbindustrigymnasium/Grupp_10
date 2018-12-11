@@ -5,23 +5,17 @@ import {
 	Text,
 } from 'react-native';
 
-
 export default class showproducts extends React.Component {
-
     constructor(props) {
-    
 		super(props);
 		this.state = {
 			Name: 'victor',
-			lampaV: {name:'idunno2', strength:'60'}
-			
+			lampaV: {name:'idunno2', strength:'60'}	
 		}
-
     }
 
 componentDidMount(){ // hämtar värden 
 	let self=this;
-
 	fetch('http://iot.abbindustrigymnasium.se:3001/grupp10_light/', {
 		method: 'GET'
 	}).then((response) => response.json()).then((responseJSON) =>
@@ -40,43 +34,29 @@ componentDidMount(){ // hämtar värden
 	alert('are your databas table empty?')
 	console.log(this.state);
 })
-
 	}
-
 
     render() {
         return ( //vart på skärmen olika delar ska vara
-
             <View 
                 style={styles.component}
             >
-
                 <View style={styles.layouts}>
-
                 	<View style={styles.layout1}>
-
                 		<View style={styles.itemcontainer1}>
-
                 			<View style={styles.itemcontainer1Inner}>
-
                                 <View style={styles.item1}>
 										<Switch 
 											value={this.state.switchValue}
 											onValueChange={(val) => this.setState({ switchValue : val })} // ändrar valuet
 										/>
 									</View>
-
                 			</View>
-
                 		</View>
-
                 	</View>
                 	<View style={styles.layout2}>
-
                 		<View style={styles.itemcontainer2}>
-
                 			<View style={styles.itemcontainer2Inner}>
-
                                 <View style={styles.item2}>
 										<Text
 											style={styles.item2Text}
@@ -84,21 +64,13 @@ componentDidMount(){ // hämtar värden
 											
 										</Text> 
 									</View>
-
                 			</View>
-
                 		</View>
-
-                	</View>
-                	
+                	</View>           
                 </View>
-
-            </View>
-            
+            </View>            
         );
-
     }
-
 }
 
 const styles = StyleSheet.create({
