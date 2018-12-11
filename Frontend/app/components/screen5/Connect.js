@@ -46,10 +46,11 @@ componentDidMount(){ // hämtar värden
                 		<View style={styles.itemcontainer1}>
                 			<View style={styles.itemcontainer1Inner}>
                                 <View style={styles.item1}>
-										<Switch 
-											value={this.state.switchValue}
-											onValueChange={(val) => this.setState({ switchValue : val })} // ändrar valuet
-										/>
+								<Switch 
+								value={this.state.switchValue}
+								onValueChange={(val) => this.setState({ switchValue : val })} 
+	                                                         // ändrar valuet
+								/>
 									</View>
                 			</View>
                 		</View>
