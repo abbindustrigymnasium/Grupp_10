@@ -16,7 +16,7 @@ export default class showproducts extends React.Component {
 
 componentDidMount(){ // hämtar värden 
 	let self=this;
-	fetch('http://iot.abbindustrigymnasium.se:3001/grupp10_light/', {
+	fetch('http://iot.abbindustrigymnasium.se:3000/grupp10_light/', {
 		method: 'GET'
 	}).then((response) => response.json()).then((responseJSON) =>
 {	console.log(this.state);
